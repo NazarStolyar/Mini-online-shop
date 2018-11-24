@@ -87,26 +87,28 @@ h3 {
     width: 70%;
     margin-top: 20px;
 }
-.goods_cast {
-    height: 500px;
-    flex-direction: column;
-}
-.imgAndName {
-    flex-direction: column;
-    height: 70%;
-}
-.cart_img {
-    width: 217px;
-     margin-left: 0px;
-    height: 337px;
-}
-h3 {
-    margin-left: 0px;
-}
-.priseAndAdd {
-    width: 82%;
-    height: 27%;
-}
-#blockRazom {
-    background-color: red;
+@media screen and (max-width: 375px ){
+    .goods_cast {
+        height: 500px;
+        flex-direction: column;
+    }
+    .imgAndName {
+        flex-direction: column;
+        height: 70%;
+    }
+    .cart_img {
+        width: 217px;
+        margin-left: 0px;
+        height: 337px;
+    }
+    h3 {
+        margin-left: 0px;
+    }
+    .priseAndAdd {
+        width: 82%;
+        height: 27%;
+    }
+    #blockRazom {
+        background-color: red;
+    }
 }
