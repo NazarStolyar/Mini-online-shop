@@ -7,20 +7,24 @@ $('document').ready(function () {
 //Загружаєм товари на сторінку
 function loadGoods () {
     $.getJSON('goods.json', function (data) {
-        console.log(data);
         var out = '';
         for (var key in data) {
-            out += '<div class="single-goods">';
-            out += '<h3>' + data[key]["name"] + '</h3>';
-            out += '<img src="'+data[key].image+'"/>';
-            out += '<p> Ціна: ' + data[key]["cost"] + "$" + '</p>';
-            // out += '<p>' + data[key]["description"] + '</p>';
-            out += '<button class="buy" data-art="'+key+'">Купити</button>';
-            out += '</div>'
-
+            if (data[key]["type"] != "phone") {
+                checkCart();
+            } else {
+                out += '<div class="card">';
+                out += '<img class="card-img-top" src="'+data[key].image+'"/>';
+                out += '<div class="card-body">';
+                out += '<h4 class="card-title">' + data[key]["name"] + '</h4>';
+                out += '<p class="card-text"> Ціна: ' + data[key]["cost"] + "$" + '</p>';
+                // out += '<p>' + data[key]["description"] + '</p>';
+                out += '<button class="btn btn-primary" data-art="'+key+'">Купити</button>';
+                out += '</div>';
+                out += '</div>';
+            }
         }
         $('#goods').html(out);
-        $('button.buy').on('click', addToCart);
+        $('button.btn.btn-primary').on('click', addToCart);
     });
 }
 // добавляєм товар до корзини
@@ -42,9 +46,9 @@ function checkCart () {
     }
 }
 
-//показуєм що створено у корзині 
+//показуєм що створено у корзині
 function showMiniCart () {
-     var out = 0;
+    var out = 0;
     for (var k in cart) {
         out += cart[k];
     }

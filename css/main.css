@@ -1,94 +1,28 @@
-body {
+body,
+html,
+.view {
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    width: 90%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-#top-block {
-    display: flex;
-}
-
-#mini-cart {
-    width: 21%;
-    border-radius: 32%;
-    border: 1px solid black;
-    display: flex;
-    height: 31%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    color: white;
-    margin-top: 44px;
-    margin-left: -20px;
-}
-.ico_shop {
-    font-size: 41px;
-    color: black;
-    margin-top: 20px;
-}
-.showGoods {
-    display: flex;
-    width: 10%;
-}
-#goods {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.single-goods {
-    display: flex;
-    border: 1px solid black;
-    border-radius: 10px;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
-
-.buy {
-    width: 50%;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 3px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: white;
-    cursor: pointer;
-
-}
-.buy::before {
-    position: absolute;
-    content: '';
     width: 100%;
+    overflow-x: hidden;
     height: 100%;
-    background-color: #736357;
-    bottom: -100%;
-    left: 0;
-    transition: all 0.5s ease;
-    /*opacity: 0.5;*/
-    z-index: -1;
 }
-.buy:hover {
-    color: white;
+
+
+.text-strong {
+    font-size: 33px;
+    padding: 0 10px;
 }
-.buy:hover::before {
-    bottom: 0;
+.ico_apple {
+    padding-right: 10px;
 }
-@media screen and (max-width: 1000px){
-    #mini-cart {
-        width: 41%;
-    }
+.navbar.scrolling-navbar .navbar-nav>li {
+    margin-left: 20px;
 }
-@media screen and (max-width: 1000px){
-    #mini-cart {
-        margin-left: -40px;
-    }
+.content {
+    margin-top: 100px;
+}
+.card {
+    margin-left: 20px;
+    margin-top: 20px;
 }

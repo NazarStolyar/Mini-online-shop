@@ -6,6 +6,7 @@ $.getJSON('goods.json', function (data) {
    checkCart();
    showCart(); // ввивід товарів на сторіку
    //console.log(cart);
+    showMiniCart();
 
    function showCart () {
        if ($.isEmptyObject(cart)   ) {
@@ -17,17 +18,17 @@ $.getJSON('goods.json', function (data) {
         var out = '';
        var sum = 0;
        for (var key in cart) {
-           out += '<div class="goods_cast">';
+           out += '<div class="card">';
            out += '<div class="imgAndName">';
            out += '<img src="'+goods[key].image +'" class="cart_img">';
            out += '<h3>' + goods[key].name + '</h3>';
            out += '</div>';
            out += '<div class="priseAndAdd">';
-           out += '<button class="minus" data-art="'+ key +'"> - </button>';
+           out += '<button class="minus btn btn-primary" data-art="'+ key +'"> - </button>';
            out += '<p>' + cart[key] + '</p>';
-           out += '<button class="add" data-art="'+ key +'"> + </button>';
+           out += '<button class="add btn btn-primary" data-art="'+ key +'"> + </button>';
            out += cart[key]*goods[key].cost + '$';
-           out += '<button class="delete" data-art="'+ key +'"> Delete </button>';
+           out += '<button class="delete btn btn-primary" data-art="'+ key +'"> Delete </button>';
            out += '</div>';
            out += '</div>';
            sum += cart[key]*goods[key].cost;
@@ -44,6 +45,7 @@ $.getJSON('goods.json', function (data) {
     function plusGoods() {
         var article = $(this).attr('data-art');
         cart[article]++;
+        showMiniCart();
         saveCartToLS();  //збереження корзини в localStorage
         showCart();  //візуалізація нової корзини
     }
@@ -56,14 +58,18 @@ $.getJSON('goods.json', function (data) {
         } else {
             delete cart[article];
         }
+        showMiniCart();
         saveCartToLS(); //збереження корзини в localStorage
         showCart();      //візуалізація нової корзини
+
+
     }
     function deleteGoods () {
         var article = $(this).attr('data-art');
         delete cart[article];
         saveCartToLS(); //збереження корзини в localStorage
         showCart();   //візуалізація нової корзини
+        showMiniCart();
     }
 });
 
@@ -75,4 +81,13 @@ function checkCart () {
 
 function saveCartToLS() {
     localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function showMiniCart () {
+    var out = 0;
+    for (var k in cart) {
+        out += cart[k];
+    }
+
+    $('#mini-cart').text(out);
 }
