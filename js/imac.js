@@ -9,6 +9,7 @@ function loadGoods () {
     $.getJSON('goods.json', function (data) {
         var out = '';
         for (var key in data) {
+            if (data[key]['type'] === 'iMac') {
                 out += '<div class="card">';
                 out += '<img class="card-img-top" src="'+data[key].image+'"/>';
                 out += '<div class="card-body">';
@@ -18,6 +19,7 @@ function loadGoods () {
                 out += '<button class="btn btn-primary plus_goods" data-art="'+key+'">Купити</button>';
                 out += '</div>';
                 out += '</div>';
+            }
         }
         $('#goods').html(out);
         $('.plus_goods').on('click', addToCart);

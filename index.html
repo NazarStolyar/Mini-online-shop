@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Material Design Bootstrap</title>
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,11 +14,16 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="libs/slickslide/slick.css">
+  <link rel="stylesheet" href="libs/slickslide/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Mini Online Shop</title>
 </head>
 <body>
+<header>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
     <div class="container">
-      <a href="" class="navbar-brand waves-effect">
+      <a href="index.html" class="navbar-brand waves-effect">
         <strong class="green-text text-strong"><i class="fab ico_apple green-text fa-apple"></i>APPLE</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,16 +32,19 @@
       <div class="collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a href="#" class="nav-link waves-effect">Home</a>
+            <a href="index.html" class="nav-link waves-effect">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">Iphone</a>
+            <a href="iphone.html" class="nav-link waves-effect">Iphone</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">MacBook</a>
+            <a href="mac-book.html" class="nav-link waves-effect">MacBook</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link waves-effect">Imac</a>
+            <a href="imac.html" class="nav-link waves-effect">Imac</a>
+          </li>
+          <li class="nav-item">
+            <a href="ipad.html" class="nav-link waves-effect">Ipad</a>
           </li>
         </ul>
         <ul class="navbar-nav nav-flex-icons">
@@ -63,15 +69,81 @@
       </div>
     </div>
   </nav>
+  <div class="slidere">
+    <!--<div class="center">-->
+      <div  class="slider_text">
+        <img class="slider_num"  src="img/slider/1.jpeg" alt="">
+        <h2>iPhone XR from $449.*</h2>
+        <p>Trade in your current iPhone and upgrade to a new one.</p>
+      </div>
+      <div class="slider_text">
+        <img class="slider_num" src="img/slider/2.jpg" alt="">
+      </div>
+      <div class="slider_text">
+        <img class="slider_num" src="img/slider/3.jpg" alt="">
+        <h2>MacBook Air</h2>
+        <p>Lightness strikes again.</p>
+      </div>
+      <div class="slider_text">
+        <img class="slider_num" src="img/slider/4.jpg" alt="">
+        <h2>iMac</h2>
+        <p>The vision is brighter than ever.</p>
+      </div>
+      <div class="slider_text">
+        <img class="slider_num" src="img/slider/5.jpg" alt="">
+      </div>
+      <div class="slider_text">
+        <img class="slider_num" src="img/slider/6.jpg" alt="">
+      </div>
+    <!--</div>-->
+  </div>
+</header>
+<main>
     <div class="container content">
         <div class="row" id="goods">
 
-
           </div>
-        </div>
     </div>
+  <div class="contaiter">
+    <div class="row">
+      <button class="btn btn-primary" id="more">Show More</button>
+    </div>
+  </div>
+  <div class="plity">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="mac-book.html">
+            <img src="img/stock/5HGQIS0BJR.jpg" class="link_block" alt="">
+          </a>
+          <h2><i class="fa fa-apple"></i>MacBook</h2>
+        </div>
+        <div class="col-md-6">
+          <a href="iphone.html">
+            <img src="img/stock/KBTL72KIFS.jpg" class="link_block" alt="">
+          </a>
+          <h2><i class="fa fa-apple"></i>Iphone</h2>
+        </div>
+        <div class="col-md-6">
+          <a href="imac.html">
+            <img src="img/stock/NUG1YRRSJI.jpg" class="link_block" alt="">
+          </a>
+          <h2><i class="fa fa-apple"></i>Imac</h2>
+        </div>
+        <div class="col-md-6">
+          <a href="ipad.html">
+            <img src="img/stock/USWSDFZZX2.jpg" class="link_block" alt="">
+          </a>
+          <h2><i class="fa fa-apple"></i>Ipad</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
 
 
+</footer>
 
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -80,7 +152,10 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="libs/slickslide/slick.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/more_list.js"></script>
+  <script src="js/lider.js"></script>
 </body>
 
 </html>

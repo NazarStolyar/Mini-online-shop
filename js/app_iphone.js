@@ -9,15 +9,17 @@ function loadGoods () {
     $.getJSON('goods.json', function (data) {
         var out = '';
         for (var key in data) {
-                out += '<div class="card">';
-                out += '<img class="card-img-top" src="'+data[key].image+'"/>';
-                out += '<div class="card-body">';
-                out += '<h4 class="card-title">' + data[key]["name"] + '</h4>';
-                out += '<p class="card-text"> Ціна: ' + data[key]["cost"] + "$" + '</p>';
-                // out += '<p>' + data[key]["description"] + '</p>';
-                out += '<button class="btn btn-primary plus_goods" data-art="'+key+'">Купити</button>';
-                out += '</div>';
-                out += '</div>';
+            if (data[key]['type'] === 'phone') {
+            out += '<div class="card">';
+            out += '<img class="card-img-top" src="'+data[key].image+'"/>';
+            out += '<div class="card-body">';
+            out += '<h4 class="card-title">' + data[key]["name"] + '</h4>';
+            out += '<p class="card-text"> Ціна: ' + data[key]["cost"] + "$" + '</p>';
+            // out += '<p>' + data[key]["description"] + '</p>';
+            out += '<button class="btn btn-primary plus_goods" data-art="'+key+'">Купити</button>';
+            out += '</div>';
+            out += '</div>';
+            }
         }
         $('#goods').html(out);
         $('.plus_goods').on('click', addToCart);

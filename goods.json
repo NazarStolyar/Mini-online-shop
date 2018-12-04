@@ -34,11 +34,145 @@
     "description": "Мобільний телефон Iphone X",
     "image" : "img/iphoneX.jpeg"
   },
+  "11111" : {
+    "type" : "phone",
+    "name" : "Iphone Xs Max",
+    "cost": 1200,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/iphone-xs-max.jpg"
+  },
+  "11112" : {
+    "type" : "phone",
+    "name" : "Iphone Xs Max Silver",
+    "cost": 1200,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/iphone-xs-max-silver.jpg"
+  },
+  "11113" : {
+    "type" : "phone",
+    "name" : "Iphone Xr Black",
+    "cost": 1000,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/iphone_xr_black.jpeg"
+  },
+  "11114" : {
+    "type" : "phone",
+    "name" : "Iphone Xr Blue",
+    "cost": 1000,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/iphone_xr_blue.jpg"
+  },
+  "11115" : {
+    "type" : "phone",
+    "name" : "Iphone Xr Red",
+    "cost": 1000,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/iphone_xr_red.jpg"
+  },
   "11299" : {
     "type" : "leaptop",
-    "name" : "MacBook",
-    "cost": 875,
+    "name" : "Apple MacBook Air 13 128GB (MQD32) 2017",
+    "cost": 899,
     "description": "Мобільний телефон Iphone X",
-    "image" : "img/iphoneX.jpeg"
+    "image" : "img/mac_book_air_13.jpg"
+  },
+
+  "12100" : {
+    "type" : "leaptop",
+    "name" : "MacBook Air 13 Retina, Gold, 256GB (MREF2) 2018",
+    "cost": 1599,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_air_retina_gold.jpeg"
+  },
+  "12101" : {
+    "type" : "leaptop",
+    "name" : "MacBook Air 13 Silver, 256GB (MREC2) 2018",
+    "cost": 1599,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_air_retina_silver_13.jpeg"
+  },
+  "12102" : {
+    "type" : "leaptop",
+    "name" : "MacBook Air 13 Space Gray, 256GB (MRE92) 2018",
+    "cost": 1599,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_air_retina_space_gray13.jpeg"
+  },
+  "12103" : {
+    "type" : "leaptop",
+    "name" : "Apple MacBook Pro 13 Retina,Silver (MR9U2) 2018",
+    "cost": 1775,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_pro_silver.jpg"
+  },
+  "12104" : {
+    "type" : "leaptop",
+    "name" : "Apple MacBook Pro 15 Retina, Silver (MR972) 2018",
+    "cost": 2589,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_pro_silver_15.jpeg"
+  },
+  "12105" : {
+    "type" : "leaptop",
+    "name" : "Apple MacBook Pro 13 Retina, Space Gray (MR9Q2) 2018",
+    "cost": 1775,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_pro_space_gray.jpg"
+  },
+  "12106" : {
+    "type" : "leaptop",
+    "name" : "Apple MacBook Pro 15 Retina, Space Gray (MR942) 2018",
+    "cost": 2589,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/mac_book_pro_space_gray_15.jpeg"
+  },
+  "12107" : {
+    "type" : "iMac",
+    "name" : "Apple iMac 21.5' with Retina 4K (MNDY2) 2017",
+    "cost": 1389,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/imac 21'5.jpg"
+  },
+  "12108" : {
+    "type" : "iMac",
+    "name" : "Apple iMac 27' with Retina 5K (MNEA2) 2017",
+    "cost": 2049,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/imac 21'5.jpg"
+  },
+  "12109" : {
+    "type" : "iMac",
+    "name" : "Apple iMac 27' Space Gray with Retina 5K (MNEA2) 2017",
+    "cost": 2049,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/imac_27.jpg"
+  },
+  "12201" : {
+    "type" : "iPad",
+    "name" : "iPad Pro 10.5 256GB, Space Gray, Wi-Fi (MPDY2)",
+    "cost": 805,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/ipad_spage_gray.jpeg"
+  },
+  "12202" : {
+    "type" : "iPad",
+    "name" : "Планшет Apple iPad Wi-Fi 32GB Gold (MRJN2) 2018",
+    "cost": 389,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/ipad_gold.jpeg"
+  },
+  "12203" : {
+    "type" : "iPad",
+    "name" : "iPad Pro 10.5 64GB, Silver, Wi-Fi (MQDW2)",
+    "cost": 685,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/ipad_sivler.jpeg"
+  },
+  "12204" : {
+    "type" : "iPad",
+    "name" : "iPad Pro 10.5 256GB, Rose Gold, Wi-Fi (MPF22)",
+    "cost": 779,
+    "description": "Мобільний телефон Iphone X",
+    "image" : "img/ipad_rose_gold.jpeg"
   }
 }
