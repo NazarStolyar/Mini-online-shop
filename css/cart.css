@@ -64,3 +64,30 @@ h3 {
 .priseAndAdd p {
     margin-top: 20px;
 }
+@media screen and (max-width: 988px ){
+    .card {
+        flex-direction: column;
+        padding-bottom: 50px;
+        transition: all 1s ease;
+    }
+    .imgAndName {
+        flex-direction: column;
+    }
+    .cart_img {
+        width: 200px;
+        margin-left: 0px;
+        height: 355px;
+    }
+    h3 {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+    .priseAndAdd {
+        width: 62%;
+        flex-direction: column;
+    }
+    .row {
+        margin-right: 0px;
+    }
+
+}
