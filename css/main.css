@@ -151,11 +151,11 @@ main {
     .slider_text p {
         font-size: 14px;
     }
-    .card {
-        width: 165px;
-    }
+    /*.card {*/
+        /*width: 165px;*/
+    /*}*/
     #goods {
-        height: 525px;
+        height: 610px;
     }
 
 
